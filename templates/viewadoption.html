@@ -1,0 +1,413 @@
+<html>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+         height: 100%;
+          width: 100%;
+          background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpeg)
+         background-position: center;
+         background-size: cover;
+         position: absolute;
+}
+*{
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.bg-image{
+
+filter: blur(3px);
+-webkit-filter: blur(3px);
+height:100%;
+width:100%;
+background-position:center center;
+background-repeat:no-repeat;
+background-text:cover;
+background-image: url('static/img/j.jpg');
+-webkit-background-size: cover;
+background-size: cover;
+}
+.menu-area li a{
+text-decoration: none;
+color: #fff;
+letter-spacing: 1px;
+text-transform: uppercase;
+display: block;
+padding: 0 25px;
+font-size: 14px;
+line-height: 30px;
+position: relative;
+z-index: 1;
+}
+.menu-area li{
+list-style: none;
+display: inline-block;
+}
+.custom-padding{
+padding-top: 25px;
+}
+nav{
+position: relative;
+padding: 10px 20px 10px 10px;
+text-align: right;
+z-index: 1;
+background:#333;
+margin: 0 auto;
+width: 100%;
+}
+.logo{
+width: 15%;
+float: left;
+text-transform: uppercase;
+color: #fff;
+font-size: 25px;
+text-align: left;
+padding-left: 2%;
+
+
+}
+
+.menu-area li a:hover{
+background: tomato;
+color: #fff;
+}
+nav:before{
+position: absolute;
+content: ' ';
+left: 0;
+top: 100%;
+border-top: 10px solid #333;
+border-right: 10px solid #333;
+border-left: 10px solid transparent;
+border-bottom: 10px solid transparent;
+}
+
+nav:after{
+position: absolute;
+content: ' ';
+top: 100%;
+border-top: 10px solid #333;
+border-left: 10px solid #333;
+border-right: 10px solid transparent;
+border-bottom: 10px solid transparent;
+right: 0;
+}
+table{
+          width: 100%;
+          margin: auto;
+          text-align: center;
+         table-layout: fixed;
+         height:20%;
+}
+table, tr, th, td{
+             padding: 0px;
+             color: white;
+             border: 1px solid #080808;
+             border-collapse: collapse;
+             font-size: 18px;
+            font-family: Arial;
+            background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+            background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+}
+td:hover{
+            background: orange;
+}
+.k{
+
+  width: 100%;
+  height: auto;
+  
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ 
+}
+h2 {
+background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
+  -webkit-background-clip: text;
+background-size: contain;
+width: 100%;
+text-align: center;
+color: transparent;
+font-weight: 900;
+
+
+&::before {
+content: attr(data-heading);
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+background: linear-gradient(45deg, rgba(255,255,255,0) 45%,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+-webkit-background-clip: text;
+color: transparent;
+mix-blend-mode: screen;
+animation: shine 1s infinite;
+background-size: 200%;
+text-shadow:
+2px 2px 10px rgba(#000, 0.2),
+-2px 2px 10px rgba(#000, 0.2),
+-2px -2px 10px rgba(#000, 0.2);
+}
+}
+
+@keyframes shine {
+0% {background-position: -100%;}
+100% {background-position: 100%;}
+}
+
+
+
+
+
+/* Not needed for demo */
+
+@font-face {
+font-family:'frozen';
+src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff');
+}
+
+
+h2{
+
+transform: translate(-50%, -50%);
+position: absolute;
+font-size: 3vw;
+margin: 0;
+font-family: 'frozen', serif;
+font-weight: 700;
+}
+.j{
+padding-top:50px;
+padding-left:770px;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  transition: all .5s;
+  text-decoration: none;
+  color: #fff;
+
+}
+img{
+  width: 100%;
+  transition: all .5s;
+}
+section{
+  padding: 70px 0;
+  margin-top: 50px;
+  
+  text-align: center;
+}
+.container{
+  
+height:330px;
+max-height:2200px; 
+  width: 100%;
+  margin: 0 auto;
+}
+main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin: 30px 15px 0px 15px;
+}
+header{
+  width: 70%;
+  margin: 0 auto;
+}
+header h1{
+  margin: 0;
+  font-size: 50px;
+  color: rgba(52, 73, 94,1.0);
+  font-weight: 500;
+}
+.singleBlog{
+  position: relative;
+  overflow: hidden;
+  max-height: 580px;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px #ccc;
+  transition: all .5s;
+}
+.singleBlog:hover{
+  box-shadow: 0 2px 13px #ccc;
+  transition: all .5s;
+}
+.singleBlog:hover img{
+  transform: scale(1.1);
+  transition: all .4s;
+}
+.blogContent{
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 5px;
+  background: linear-gradient(45deg, rgba(21,82,153,1) 0%,rgba(144,192,229,.4) 100%);
+  transition: all .5s;
+}
+.singleBlog:hover .blogContent{
+  bottom: 0;
+  transition: all .5s;
+}
+
+.blogContent h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.blogContent h3 span{
+  display: block;
+  font-size: 60%;
+  margin-top: 5px;
+  font-weight: 600;
+  color: rgba(52, 73, 94,1.0)
+}
+
+.blogContent a{
+  font-size: 14px;
+  font-weight: 500;
+}
+.blogContent .btn{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.blogContent .btn:hover{
+  background: rgba(52, 152, 219,1.0);
+  transition: all .5s;
+  text-decoration: none;
+}
+.blogContent a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:992px) {
+  main{
+    grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  }
+}
+@media (max-width:767px) {
+  main{
+    grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  }
+  header{
+    width: 95%;
+  }
+  .blogContent{
+    bottom: 0;
+  }
+}
+@media (max-width:500px) {
+
+    main{
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+</style>
+</head>
+<body>
+<div class="j"><h2 style="color:#122c7a" align="center">Crop Recommender System using Machine Learning Approach</h2></div>
+
+<div class="custom-padding">
+  <nav>
+    
+    <ul class="menu-area">
+       
+       <li><a href="/viewadoption"><i class='fas fa-child'></i>&nbsp;Cast Vote</a></li>
+       <li><a href="/profile"><i class='fas fa-user'></i>&nbsp;PROFILE</a></li>
+       <li><a href="/feedback"><i class="fas fa-pencil-alt"></i>&nbsp;FEEDBACK</a></li>
+       <li><a href="/viewfeedback"><i class="fas fa-address-book"></i>&nbsp;VIEW REVIEWS</a></li>
+       <li><a href="/logout"><i class='fas fa-sign-out-alt'></i>&nbsp;LOGOUT</a></li>
+       
+    </ul>
+  </nav>
+
+</div >
+
+<div class="bg-image"></div>
+
+            <center>
+<div class="k">
+
+                
+ <section>
+    <div class="container">
+
+<header>
+
+        <h1>Adoption Details</h1>
+        <p>Adoption is a new addition of your future Happiness...!</p>
+      </header>
+
+<main>
+
+ {% for item in ddata %}
+ <div class="singleBlog">
+{% set name='adoption/'+ item[2] %}
+          <img src="{{ url_for('static', filename = name) }}" alt="">
+          <div class="blogContent">
+            <h3>{{item[1]}}<span>{{item[6]}}</span></h3>
+            <p>{{item[4]}}<a href="#"></a> | <a href="#">{{item[3]}}</a></p>
+            <p>{{item[5]}}</p>
+            <a href="/adopt/{{item[0]}}" class="btn">Adopt</a>
+          </div>
+        </div>
+{% endfor %}
+</main>
+</div>
+</section>
+
+
+	
+</div>     
+
+    </body>
+</html>

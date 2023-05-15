@@ -1,0 +1,112 @@
+
+<html>
+<head>
+</head>
+</head>
+ 
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 12</div>
+  <img src="{{url_for('static', filename='img/cat1.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 12</div>
+  <img src="{{url_for('static', filename='img/cat2.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 12</div>
+  <img src="{{url_for('static', filename='img/cat3.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 12</div>
+  <img src="{{url_for('static', filename='img/cat4.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 12</div>
+  <img src="{{url_for('static', filename='img/cat5.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 12</div>
+  <img src="{{url_for('static', filename='img/cat6.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 12</div>
+  <img src="{{url_for('static', filename='img/cat7.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 12</div>
+  <img src="{{url_for('static', filename='img/cat8.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 12</div>
+  <img src="{{url_for('static', filename='img/cat9.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 12</div>
+  <img src="{{url_for('static', filename='img/cat10.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 12</div>
+  <img src="{{url_for('static', filename='img/cat11.jpg')}}" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 12</div>
+  <img src="{{url_for('static', filename='img/cat12.jpg')}}" style="width:50%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+  </body>
+</html>

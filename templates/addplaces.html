@@ -1,0 +1,472 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+         height: 100%;
+          width: 100%;
+          background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpeg)
+         background-position: center;
+         background-size: cover;
+         position: absolute;
+}
+*{
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body{
+  background-image: url(1.jpeg);
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center center;
+height: 100vh;
+}
+.menu-area li a{
+text-decoration: none;
+color: #fff;
+letter-spacing: 1px;
+text-transform: uppercase;
+display: block;
+padding: 0 25px;
+font-size: 14px;
+line-height: 30px;
+position: relative;
+z-index: 1;
+}
+.menu-area li{
+list-style: none;
+display: inline-block;
+}
+.custom-padding{
+padding-top: 25px;
+}
+nav{
+position: relative;
+padding: 10px 20px 10px 10px;
+text-align: right;
+z-index: 1;
+background:#333;
+margin: 0 auto;
+width: 100%;
+}
+.logo{
+width: 15%;
+float: left;
+text-transform: uppercase;
+color: #fff;
+font-size: 25px;
+text-align: left;
+padding-left: 2%;
+
+
+}
+
+.menu-area li a:hover{
+background: tomato;
+color: #fff;
+}
+nav:before{
+position: absolute;
+content: ' ';
+left: 0;
+top: 100%;
+border-top: 10px solid #333;
+border-right: 10px solid #333;
+border-left: 10px solid transparent;
+border-bottom: 10px solid transparent;
+}
+
+nav:after{
+position: absolute;
+content: ' ';
+top: 100%;
+border-top: 10px solid #333;
+border-left: 10px solid #333;
+border-right: 10px solid transparent;
+border-bottom: 10px solid transparent;
+right: 0;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+ 
+  padding: 0 10px;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #ffd658;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+h3 {
+background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
+  -webkit-background-clip: text;
+background-size: contain;
+width: 100%;
+text-align: center;
+color: transparent;
+font-weight: 900;
+
+
+&::before {
+content: attr(data-heading);
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+background: linear-gradient(45deg, rgba(255,255,255,0) 45%,rgba(255,255,255,0.8) 50%,rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%);
+-webkit-background-clip: text;
+color: transparent;
+mix-blend-mode: screen;
+animation: shine 1s infinite;
+background-size: 200%;
+text-shadow:
+2px 2px 10px rgba(#000, 0.2),
+-2px 2px 10px rgba(#000, 0.2),
+-2px -2px 10px rgba(#000, 0.2);
+}
+}
+
+@keyframes shine {
+0% {background-position: -100%;}
+100% {background-position: 100%;}
+}
+
+
+
+
+
+/* Not needed for demo */
+
+@font-face {
+font-family:'frozen';
+src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff');
+}
+
+
+h3 {
+
+transform: translate(-50%, -50%);
+position: absolute;
+font-size: 3vw;
+margin: 0;
+font-family: 'frozen', serif;
+font-weight: 700;
+}
+.j{
+padding-top:50px;
+padding-left:770px;
+}
+
+.bg-image{
+
+filter: blur(0px);
+-webkit-filter: blur(0px);
+height:100%;
+width:100%;
+background-position:center center;
+background-repeat:no-repeat;
+background-text:cover;
+background-image: url('static/img/j.jpg');
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+</style>
+</head>
+<body >
+<div class="j"><h3 style="color:#122c7a" align="center">Crop Recommender System using Machine Learning Approach</h3></div>
+<div class="custom-padding">
+  <nav>
+    
+    <ul class="menu-area">
+      
+       <li><a href="/viewplaces"><i class="far fa-images"></i>&nbsp;VIEW DataSet</a></li>
+       <li><a href="/viewusers"><i class="fas fa-users"></i>&nbsp;VIEW USERS</a></li>
+       <li><a href="/viewadminfeedback"><i class="fas fa-address-book"></i>&nbsp;VIEW FEEDBACK</a></li>
+       <li><a href="/logout"><i class="fas fa-sign-out-alt"></i>&nbsp;LOGOUT</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="bg-image">
+
+
+       
+<br>
+
+
+              
+<div class="wrapper">
+    
+    <div class="form">
+<form action="/addplacesdb" method="post" enctype=multipart/form-data >       
+       <div class="inputfield">
+  
+          <label>First Name</label>
+          <input type="text" class="input" name="name">
+       </div>  
+        <div class="inputfield">
+          <label>Image 1</label>
+           <input type="file" name="photos1" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 2</label>
+           <input type="file" name="photos2" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 3</label>
+           <input type="file" name="photos3" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 4</label>
+           <input type="file" name="photos4" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 5</label>
+           <input type="file" name="photos5" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 6</label>
+           <input type="file" name="photos6" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 7</label>
+           <input type="file" name="photos7" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 8</label>
+           <input type="file" name="photos8" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 9</label>
+           <input type="file" name="photos9" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 10</label>
+           <input type="file" name="photos10" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 11</label>
+           <input type="file" name="photos11" class="input">
+       </div>  
+	   <div class="inputfield">
+          <label>Image 12</label>
+           <input type="file" name="photos12" class="input">
+       </div>  
+       <div class="inputfield">
+          <label>Address</label>
+          <input type="text" class="input" name="address">
+       </div>  
+      <div class="inputfield">
+          <label>Area</label>
+          <input type="text" class="input" name="area">
+       </div> 
+        
+        <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" name="tag">
+       </div> 
+     
+      <div class="inputfield">
+          <label>Description</label>
+          <textarea class="textarea" name="desc"></textarea>
+       </div> 
+     
+      <div class="inputfield">
+
+        <input type="submit" value="Submit" class="btn">
+</form>
+      </div>
+    </div>
+</div>	
+
+
+</div>
+
+
+
+
+	
+
+                
+           
+
+</body>
+</html>
